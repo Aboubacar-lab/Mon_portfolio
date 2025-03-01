@@ -35,36 +35,6 @@ if (theme == "dark-mode") {
   night.style.opacity = "1";
 }
 
-// Define a function to switch the theme
-function switchTheme() {
-  if (document.body.classList.contains("dark-mode")) {
-    document.body.classList.remove("dark-mode");
-    document.body.classList.add("light-mode");
-
-    sun.style.opacity = "0";
-    day.style.opacity = "0";
-
-    moon.style.opacity = "1";
-    night.style.opacity = "1";
-
-    localStorage.setItem("theme", "light-mode");
-
-  } else {
-    document.body.classList.remove("light-mode");
-    document.body.classList.add("dark-mode");
-
-    sun.style.opacity = "1";
-    day.style.opacity = "1";
-
-
-    moon.style.opacity = "0";
-    night.style.opacity = "0";
-
-    // Store the theme in localStorage
-    localStorage.setItem("theme", "dark-mode");
-  }
-}
-
 // Add an event listener to the button to call switchTheme on click
 button.addEventListener("click", switchTheme);
 
@@ -119,8 +89,8 @@ downloadBtn.addEventListener('click', downloadFile);
 function downloadFile() {
   const downloadLink = document.createElement('a');
 
-  downloadLink.href = 'assets/Dominique_Bello_CV-FR.pdf';
-  downloadLink.download = 'Dominique_Bello_CV-FR.pdf';
+  downloadLink.href = 'CVMSA.pdf';
+  downloadLink.download = 'CVMSA.pdf';
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
