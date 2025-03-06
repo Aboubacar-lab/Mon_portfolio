@@ -31,18 +31,18 @@ body.dark-mode footer {
 /*  background-image: url('assets/blob-scatter-haikei.svg');*/
 }
 
-body.dark-mode #remix-support-desk .card-content,
-body.dark-mode #shoplineart .card-content,
-body.dark-mode #movie-mania .card-content,
-body.dark-mode #social-media .card-content {
+body.dark-mode #projet1 .card-content,
+body.dark-mode #projet2 .card-content,
+body.dark-mode #projet3 .card-content,
+body.dark-mode #projet4 .card-content {
   background-color: var(--blue-25);
 }
 
-body.dark-mode #remix-support-desk,
-body.dark-mode #shoplineart,
-body.dark-mode #movie-mania,
-body.dark-mode #social-media {
-  background-image: url('assets/blob-scatter-haikei.svg');
+body.dark-mode #projet1,
+body.dark-mode #projet2,
+body.dark-mode #projet3,
+body.dark-mode #projet4 {
+  background-color: #000000;
 }
 
 body.dark-mode #github img {
@@ -81,20 +81,20 @@ body.dark-mode #github img {
     background-repeat: no-repeat;
   }
 
-  #remix-support-desk .card-content,
-  #shoplineart .card-content,
-  #movie-mania .card-content,
-  #social-media .card-content {
+  #projet1 .card-content,
+  #projet2 .card-content,
+  #projet3 .card-content,
+  #projet4 .card-content {
     background-color: var(--blue-25);
   }
 
-  #remix-support-desk,
-  #shoplineart,
-  #movie-mania,
-  #social-media {
+  #projet1,
+  #projet2,
+  #projet3,
+  #projet4 {
     min-height: 100vh;
     min-height: 100dvh;
-    background-image: url('assets/blob-scatter-haikei.svg');
+    background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -376,6 +376,11 @@ footer small {
 }
 
 div a img.icon {
+  width: 15px;
+  height: 25px;
+}
+
+a div img.icon {
   width: 25px;
   height: 25px;
 }
@@ -461,8 +466,8 @@ a.scroll-down {
   position: fixed;
   top: -65px;
   right: 15px;
-  width: 50px;
-  height: 50px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: transparent;
   z-index: 300;
@@ -841,36 +846,36 @@ a.scroll-down {
   cursor: pointer;
 }
 
-#remix-support-desk .button,
-#shoplineart .button,
-#movie-mania .button,
-#social-media .button {
-  display: inline;
-  margin: 0 30px;
+#projet1 .button,
+#projet2 .button,
+#projet3 .button,
+#projet4 .button {
+  display: flex;
+  margin: 0 11px auto auto;
 }
 
-#remix-support-desk .card,
-#shoplineart .card,
-#movie-mania .card,
-#social-media .card {
+#projet1 .card,
+#projet2 .card,
+#projet3 .card,
+#projet4 .card {
   display: inline;
   width: 80%;
   padding: 0;
   margin: 0 10px;
 }
 
-#remix-support-desk .card-container,
-#shoplineart .card-container,
-#movie-mania .card-container,
-#social-media .card-container {
+#projet1 .card-container,
+#projet2 .card-container,
+#projet3 .card-container,
+#projet4 .card-container {
   align-items: center;
   margin-bottom: 0;
 }
 
-#remix-support-desk .modal-links,
-#shoplineart .modal-links,
-#movie-mania .modal-links,
-#social-media .modal-links {
+#projet1 .modal-links,
+#projet2 .modal-links,
+#projet3 .modal-links,
+#projet4 .modal-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -878,18 +883,18 @@ a.scroll-down {
   margin-bottom: 20px;
 }
 
-#remix-support-desk .card-content,
-#shoplineart .card-content,
-#movie-mania .card-content,
-#social-media .card-content {
+#projet1 .card-content,
+#projet2 .card-content,
+#projet3 .card-content,
+#projet4 .card-content {
   padding: 30px 20px;
   margin-bottom: 20px;
 }
 
-#remix-support-desk .card-content ul,
-#shoplineart .card-content ul,
-#movie-mania .card-content ul,
-#social-media .card-content ul {
+#projet1 .card-content ul,
+#projet2 .card-content ul,
+#projet3 .card-content ul,
+#projet4 .card-content ul {
   width: 100%;
 }
 
@@ -975,8 +980,8 @@ div.tele {
 }
 
 .social-btn {
-  width: 85px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   margin: 10px;
   border-radius: var(--border-radius);
   background: hsla(222.9, 63.6%, 97.8%, 0.93);
@@ -1040,8 +1045,8 @@ div.tele {
   }
 
   .social-btn {
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
   }
 }
@@ -1103,24 +1108,24 @@ div.tele {
     line-height: 1.2;
   }
 
-  #remix-support-desk .modal-links,
-  #shoplineart .modal-links,
-  #movie-mania .modal-links,
-  #social-media .modal-links {
+  #projet1 .modal-links,
+  #projet2 .modal-links,
+  #projet3 .modal-links,
+  #projet4 .modal-links {
     line-height: 1.2;
   }
 
-  #remix-support-desk .card,
-  #shoplineart .card,
-  #movie-mania .card,
-  #social-media .card {
+  #projet1 .card,
+  #projet2 .card,
+  #projet3 .card,
+  #projet4 .card {
     width: 100%;
   }
 
-  #remix-support-desk .card-content ul,
-  #shoplineart .card-content ul,
-  #movie-mania .card-content ul,
-  #social-media .card-content ul {
+  #projet1 .card-content ul,
+  #projet2 .card-content ul,
+  #projet3 .card-content ul,
+  #projet4 .card-content ul {
     padding: 0 0 0 15px;
   }
 
@@ -1252,8 +1257,8 @@ div.tele {
   #home .btn-toggle img {
     top: -63px;
     right: 25px;
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
   }
 
   #home .profile-img {

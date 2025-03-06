@@ -34,7 +34,7 @@
   <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
-  >
+  > 
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
@@ -82,13 +82,13 @@
             class=""
           >Accueil</a></li>
         <li><a href="#about">A propos</a></li>
-        <!-- <li><a href="#projects">Projets</a></li> -->
+        <li><a href="#projects">Expertises</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <button
       id="download-btn"
-      type="button"><a href="CVMSA.pdf">CV<svg
+      type="button">CV<svg
         version="1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -121,29 +121,39 @@
             height="4"
           />
         </g>
-      </svg></a></button>
+      </svg>
+    </button>
   </header>
 
   <main>
     <section id="home">
 
+      <button
+        title="Dark / Light theme"
+        type="button"
+        class="btn-toggle"
+      >
+        <p class="day"></p>
+        <img
+          class="sun"
+          src=""
+          alt=""
+        >
+        <p class="night"></p>
+        <img
+          class="moon"
+          src=""
+          alt=""
+        >
+      </button>
+
       <div class="card-container">
         <div class="home-photos">
           <img
-            src="sysadmin.png"
+            src="sysadprofile.png"
             alt="Profile"
             class="profile-img"
           >
-          <!-- <a
-            title="Contact"
-            href="#contact"
-          >
-            <img
-              src="Seahorse.png"
-              alt="Contact"
-              class="contact-img"
-            >
-          </a> -->
         </div>
         <div class="card">
           <p>Bonjour, je m'appelle</p>
@@ -157,11 +167,11 @@
 
           <a
             class="button"
-            title="About"
+            title="Expertises"
             type="button"
-            href="#about"
+            href="#projects"
           >
-            <span class="down-arrow">&darr;</span> A propos&nbsp;<span class="down-arrow">&darr;</span></a>
+            <span class="down-arrow">&darr;</span> Expertises&nbsp;<span class="down-arrow">&darr;</span></a>
         </div>
       </div>
       <a
@@ -174,7 +184,7 @@
 
     <section id="about">
       <div class="intro">
-        <h2>A propos</h2>
+        <h3>A propos</h3>
         <div class="intro-text">
           <p>Je m'appelle Mahamadou Sani Aboubacar.</p>
           <p>Habitant à Niamey, Niger, j'aime communiquer et travailler avec des gens du monde entier.</p>
@@ -233,9 +243,98 @@
         </div>
     </section>
 
+    <section id="projects">
+      <div class="intro">
+        <h3>Expertises</h3>
+      </div>
+      <ul class="card-container projects-container">
+        <li class="card">
+          <h4>Sysadmin / Développeur</h4>
+          <img
+            src="sysad.png"
+            alt="projet1 project"
+          >
+          <a
+            href="#projet1"
+            type="button"
+            id="modal-btn-remix"
+            class="button"
+          >Détails</a>
+        </li>
+      </ul>
+      <a
+        title="Contact"
+        href="#contact"
+      >
+        <p class="scroll-down"></p>
+      </a>
+    </section>
+
+    <section
+      id="projet1"
+      class="modal">
+      <div class="modal-content">
+        <button
+            type="button"
+            class="button close"
+          >X</button>
+        <h2>Expertises</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <p><strong>Sysadmin / Développeur</strong>:
+                Au cours de mon parcours, j’ai développé une expertise en matière d’Administration des infrastructures informatiques et réseaux ainsi qu’en Développement des applications Web et Mobiles.
+                Je maitrise ces fonctions : 
+                <ul>
+                  <li>
+                    Le Support utilisateur;
+                  </li>
+                  <li>
+                     L'Administrations Réseau (Serveurs, Routeurs, Switch, ........);
+                  </li>
+                  <li>
+                    L'Administration système;
+                  </li>
+                  <li>
+                    La Gestion des infrastructures IT;
+                  </li>
+                  <li>
+                    Le Développement des applications Web et Mobiles;
+                  </li>
+                  <li>
+                    Le Traitement des données avec : MySQL, PostgreSQL, PowerBI;
+                  </li>
+                  <li>
+                    Le service d'annuaire : Active Directory;
+                  </li>
+                  <li>
+                    Maintenance informatique (software & hardware).
+                  </li>
+                </ul>
+                Mon expérience me permet également d’optimiser les performances infrastructures en
+                intégrant des solutions adaptées aux besoins métiers.
+                <br>
+                <br>
+                Merci de bien vouloir téléchargé mon CV en cliquant sur <a href="CVMSA.pdf">téléchargé le CV</a> pour plus de détaille.
+              </p>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a
+              href="https://github.com/boub81124121"
+              type="button"
+              class="button"
+            >Mes projets sur github</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <hr>
     <section id="contact">
       <div class="intro">
-        <h2>Faisons connaissance !</h2>
+        <h3>Faisons connaissance !</h3>
       </div>
 
       <div class="contact-container">
@@ -258,20 +357,6 @@
         </div>
 
         <div class="contacts">
-          <!--<a
-            title="Catevika Github"
-            href="https://github.com/Catevika"
-          >
-            <div
-              id="github"
-              class="social-btn flex-center"
-            >
-              <img
-                src="Github.svg"
-                alt="Github logo"
-              >
-            </div>
-          </a> -->
           <div
               id="telephone"
               class="social-btn flex-center tele "
@@ -318,6 +403,37 @@
               <img
                 src="mail.svg"
                 alt="Email logo"
+                class="icon"
+              >
+            </div>
+          </a>
+          <a
+            title="x.com"
+            href="https://x.com/msaboubacar_227?t=D7mtgyi2IAEeRVFuM6NzUw&s=01"
+          >
+            <div
+              id="x"
+              class="social-btn flex-center"
+            >
+              <img
+                src="Xlogo.png"
+                alt="Email logo"
+                class="icon"
+              >
+            </div>
+          </a>
+          <a
+            title="linkedin.com"
+            href="https://www.linkedin.com/in/aboubacar-mahamadou-sani-36716b267"
+          >
+            <div
+              id="linkedin"
+              class="social-btn flex-center"
+            >
+              <img
+                src="in.png"
+                alt="Email logo"
+                class="icon"
               >
             </div>
           </a>

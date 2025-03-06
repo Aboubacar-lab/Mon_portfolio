@@ -35,6 +35,36 @@ if (theme == "dark-mode") {
   night.style.opacity = "1";
 }
 
+// Define a function to switch the theme
+function switchTheme() {
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+
+    sun.style.opacity = "0";
+    day.style.opacity = "0";
+
+    moon.style.opacity = "1";
+    night.style.opacity = "1";
+
+    localStorage.setItem("theme", "light-mode");
+
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+
+    sun.style.opacity = "1";
+    day.style.opacity = "1";
+
+
+    moon.style.opacity = "0";
+    night.style.opacity = "0";
+
+    // Store the theme in localStorage
+    localStorage.setItem("theme", "dark-mode");
+  }
+}
+
 // Add an event listener to the button to call switchTheme on click
 button.addEventListener("click", switchTheme);
 
@@ -99,7 +129,7 @@ function downloadFile() {
 /*=============================================
 =     Remix Support Desk Project Modal        =
 =============================================*/
-const modalSupport = document.getElementById("remix-support-desk");
+const modalSupport = document.getElementById("projet1");
 const btn1 = document.getElementById("modal-btn-remix");
 const span1 = document.getElementsByClassName("close")[0];
 
@@ -114,7 +144,7 @@ span1.onclick = function () {
 /*=============================================
 =     ShopLineArt Project Modal =
 =============================================*/
-const modalShop = document.getElementById("shoplineart");
+const modalShop = document.getElementById("projet2");
 const btn2 = document.getElementById("modal-btn-shop");
 const span2 = document.getElementsByClassName("close")[1];
 
@@ -129,7 +159,7 @@ span2.onclick = function () {
 /*=============================================
 =     MovieMania Project Modal               =
 =============================================*/
-const modalMovie = document.getElementById("movie-mania");
+const modalMovie = document.getElementById("projet3");
 const btn3 = document.getElementById("modal-btn-movie");
 const span3 = document.getElementsByClassName("close")[2];
 
@@ -144,7 +174,7 @@ span3.onclick = function () {
 /*=============================================
 =     Social Media Project Modal               =
 =============================================*/
-const modalSocial = document.getElementById("social-media");
+const modalSocial = document.getElementById("projet4");
 const btn4 = document.getElementById("modal-btn-social");
 const span4 = document.getElementsByClassName("close")[3];
 
